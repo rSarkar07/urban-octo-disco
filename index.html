@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(180, 141, 204, 0.476);
+}
+.head{
+    background-color: rgb(205, 243, 114);
+    width: auto;
+    height: 60px;
+    text-align: center;
+}
+
+
+#heading-line{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(17, 0, 169);
+    font-size: 38px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    padding-top: 10px;
+    color: brown;
+}
+.con-2{
+    text-align: center;
+  
+    
+
+}
+#file-type{
+    border: 1px solid rgb(118, 248, 144);
+    width: 300px;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    background-color: rgba(250, 235, 215, 0.51);
+    border-bottom: none;
+}
+input#file-type{
+    text-align: center;
+    padding-left: 140px;
+}
+#submit-btn{
+    width: 442px;
+    border-top: 0;
+    background-color: rgba(10, 222, 102, 0.81);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cardo;
+    color: blanchedalmond;
+    border: 1px solid rgb(118, 248, 144);
+    border-radius: 0 0 8px 8px;
+    transition: 0.3s;
+}
+#submit-btn:hover{
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bolder;
+    background-color: rgb(42, 46, 165);
+}
+    </style>
+    <title>Merge PDFs</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1 class="heading">PDF Merger</h1>
+    </div>
+
+    <div class="container">
+        <h1 id="heading-line">
+            -----Choose File-----
+        </h1>
+    </div>
+
+    <div class="con-2">
+
+        <form method="post" action="/merge" enctype="multipart/form-data">
+            <input type="file" id="file-type" accept=".pdf" multiple name="pdfs"> <br>
+            <input type="submit" value="Submit" id="submit-btn">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
